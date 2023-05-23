@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Camply</title>
+    <!--The Home page CSS file link---------------------------------------------------->
+    <link rel="stylesheet" href="RCC Style.css" />
+    <!--The navbar & footer CSS file link------------------------------------------------>
+    <link rel="stylesheet" href="navbar&footer style.css" />
+    <!--The javascript file link------------------------------------------------------------------------>
+    <script defer src="RCCscript.js"></script>
+    <!--poppins font----------------------------------------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--font Awesome----------------------------------------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--just a script for font awesome------------------------------------------------------------------------------------------------------------------->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--Custom style sheet especially for About us section-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--This is Navbar---------------------------------------------------------------------------------------------------------------------->
+    <header>
+        <a href="RCC.html" class="logo">Camply</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="RCC.html">Home</a></li>
+                <li><a href="Camping Equipment.html">Camping Equipment</a></li>
+                <li><a href="Furniture.html">Furnitures</a></li>
+                <li><a href="Reviews.html">Reviews</a></li>
+                <li><a href="Basket.html">Basket</a></li>
+                <li><a href="Offers and Packages.html">Offers and Packages</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+
+        <div class="searchBox">
+            <input type="text" placeholder="Search here..." />
+        </div>
+    </header>
+    <!--Navbar ends------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--Popup starts here-------------------------------------------------------------------------------------->
+
+    <div class="container-pp">
+        <button onclick="toggle()" id="button" class="btn-pp">popup</button>
+    </div>
+
+    <div class="popup-container">
+
+        <div class="popup">
+
+            <h3>how do you like our services</h3>
+
+            <input type="radio" name="buttons" id="btn1">
+            <input type="radio" name="buttons" id="btn2">
+            <input type="radio" name="buttons" id="btn3">
+            <input type="radio" name="buttons" id="btn4">
+            <input type="radio" name="buttons" id="btn5">
+
+            <div class="icons">
+                <label for="btn1">🙁</label>
+                <label for="btn2">😐</label>
+                <label for="btn3">😊</label>
+                <label for="btn4">😀</label>
+                <label for="btn5">😍</label>
+            </div>
+
+            <input type="submit" value="submit" class="btn-pp">
+
+            <div onclick="toggle()" id="close">✖</div>
+
+        </div>
+
+    </div>
+
+
+    <!--Popup ends here------------------------------------------------------------------------------------->
+    <!--This is the SlideShow----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="slideshow-container">
+        <h2></h2>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Slideshow/stove.jpg" style="width:100%">
+            <div class="text">Camping Stove</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Slideshow/tent.jpg" style="width:100%">
+            <div class="text">Camping Tent</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Slideshow/compass.jpg" style="width:100%">
+            <div class="text">Camping Compass</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Slideshow/lantern.jpg" style="width:100%">
+            <div class="text">Camping Lantern</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Slideshow/Camping Knife.jpg" style="width:100%">
+            <div class="text">Camping Knife</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="Slideshow/Camping Flashlight.jpg" style="width:100%">
+            <div class="text">Camping Flashlight</div>
+        </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <!--SlideShow Ended!---------------------------------------------------------------------------------------------->
+    <!--About us section------------------------------------------------------------------------------>
+    <div class="container">
+
+        <section class="about" id="about">
+
+            <h3 class="sub-heading"> About Us </h3>
+            <h1 class="heading"> Why Choose Us? </h1>
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="Backgrounds/AS background.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>Best Equipments in the World!</h3>
+                    <p>
+                        Welcome to Camply, your ultimate destination for high-quality camping equipment and furniture.
+                        Gear up for your next adventure with Camply!
+                    </p>
+                    <p>
+                        Create unforgettable memories in the great outdoors with Camply.
+                        Reliable, stylish, and functional camping gear at your fingertips.
+                    </p>
+
+                    <div class="icons-container">
+                        <div class="icons">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>free delivery</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>easy payments</span>
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 service</span>
+                        </div>
+                    </div>
+                    <a href="Camping Equipment.html" class="about-btn">Our Equipments</a>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+
+    <!--About us section ended-------------------------------------------------------------------------->
+    <!--Intro video for Camply----------------------------->
+    <div class="video-section">
+
+        <h1 class="video-heading">Camply intro</h1>
+
+        <div class="video-container">
+            <video src="Camply intro/intro.mp4" width="500" height="375" controls></video>
+        </div>
+    </div>
+    <!--intro video ended----------------------->
+    <!--Footer Section----------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="left-area">
+            <h2 class="footer-h2" 2>Contact</h2>
+            <ul class="box">
+                <li><a href="#">Block 10, Level 8, Office 803</a></li>
+                <li><a href="#">Dubai Academic City</a></li>
+                <li><a href="#">Dubai</a></li>
+                <li><a href="#">United Arab States</a></li>
+                <li><a href="#">+971 52 798 1912</a></li>
+                <li><a href="RCC.html">Camply</a></li>
+
+            </ul>
+        </div>
+        <ul class="right-area">
+            <li>
+                <h2 class="footer-h2">Useful Links</h2>
+
+                <ul class="box h-box">
+                    <li><a href="RCC.html">Home</a></li>
+                    <li><a href="Camping Equipment.html">Camping Equipment</a></li>
+                    <li><a href="Furniture.html">Furniture</a></li>
+                    <li><a href="Reviews.html">Reviews</a></li>
+                    <li><a href="Basket.html">Basket</a></li>
+                    <li><a href="Offers and Packages.html">Offers and Packages</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="footer-h2">Recent Post</h2>
+
+                <ul class="box">
+                    <li><a href="Camping Equipment.html">Tent</a></li>
+                    <li><a href="Camping Equipment.html">Camping Knife</a></li>
+                    <li><a href="Camping Equipment.html">Sleeping Bag</a></li>
+                    <li><a href="Camping Equipment.html">Cookware</a></li>
+                    <li><a href="Camping Equipment.html">First Aid-Kit</a></li>
+                    <li><a href="Camping Equipment.html">Camping Flashlight</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="footer-h2">Newletter</h2>
+                <form action="" class="form-search">
+                    <div class="search-box">
+                        <input type="text"  />
+                        <button class="close-btn" type="submit">Search</button>
+                    </div>
+                </form>
+
+        </ul>
+
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <img src="Camping Logo.jpg" alt="logo" />
+                <div class="socials">
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="icons/whatsapp.png" id="whatsappFollow" title="Whatsapp Account" alt="Whatsapp Account">
+                    </a>
+                    <a href="https://www.instagram.com/omar_lachelah/" target="_blank">
+                        <img src="icons/instagram.png" id="instagramFollow" title="Instagram Account" alt="Instagram Account">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                        <img src="icons/gmail.png" id="gmailFollow" title="gmail Account" alt="gmail Account">
+                    </a>
+                    <a href="https://www.linkedin.com/in/omar-lachelah-0ba218246/" target="_blank">
+                        <img src="icons/linkedin.png" id="linkedinFollow" title="Linkedin Account" alt="Linkedin Account">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="icons/facebook.png" id="facebookFollow" title="facebook Address" alt="facebook Address">
+                    </a>
+                </div>
+            </div>
+            <p>All Right reserved by &copy;Omar Lachelah 2023</p>
+        </div>
+
+    </footer>
+
+    <!--A script for the navbar using ionicons as a Reference-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</html>

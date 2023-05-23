@@ -1,0 +1,382 @@
+﻿/*The SlideShow Style----------------------------------------------------------------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: poppins;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    border-radius: 30px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+.slideshow-container h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: poppins;
+    color: gold;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: poppins;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+/*SlideShow style ended!---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*About us section starts-----------------------------------------------------------------------------*/
+
+.container {
+    background-color: #C8DBBE;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    color: black;
+    font-size: 4rem;
+    padding: .5rem 0;
+}
+
+.about .row .content p {
+    color: darkorange;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.about .row .content .icons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons {
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i {
+    font-size: 2.5rem;
+    color: green;
+}
+
+.about .row .content .icons-container .icons span {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* extra style in the about us---------------------------------------------------------------------------------------- */
+.about {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container:nth-child(even) {
+    background: #eee;
+}
+
+.sub-heading {
+    text-align: center;
+    color: #54B435;
+    font-size: 2rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.about-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+    .about-btn:hover {
+        background: #ff8c00;
+        letter-spacing: .1rem;
+    }
+/* extra style ended for about us ended------------------------------*/
+
+/* extra for making it visully appealing------------------------------------------------------------------------------*/
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* About us section style end----------------------------------------------------------------------------------------*/
+
+/*My intro video style in the home page*/
+
+.video-section {
+    background-color: #AFD3E2;
+}
+
+.video-heading {
+    text-align: center;
+    color: #FC4F00;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* Popup Style starts here---------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    font-family: poppins;
+}
+
+.container-pp {
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-pp {
+    color: #fff;
+    background: #ff6933;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-pp:hover {
+        background: #ff4400;
+    }
+
+    .btn-pp:active {
+        transform: scale(.90);
+    }
+
+#button {
+    font-size: 25px;
+    height: 60px;
+    width: 250px;
+}
+
+.popup-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+    .popup-container.toggle {
+        top: 0%;
+    }
+
+    .popup-container .popup {
+        background: #fff;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.5);
+        border-radius: 5px;
+        position: relative;
+    }
+
+        .popup-container .popup h3 {
+            color: #444;
+            padding: 20px 40px;
+            font-size: 25px;
+        }
+
+        .popup-container .popup .btn-pp {
+            margin: 30px;
+            font-size: 20px;
+            height: 40px;
+            width: 150px;
+        }
+
+        .popup-container .popup input[type="radio"] {
+            display: none;
+        }
+
+        .popup-container .popup .icons {
+            padding: 10px;
+        }
+
+            .popup-container .popup .icons label {
+                font-size: 50px;
+                cursor: pointer;
+                opacity: .4;
+            }
+
+            .popup-container .popup .icons:hover label {
+                opacity: .2;
+            }
+
+
+            .popup-container .popup #btn1:checked ~ .icons label:nth-child(1),
+            .popup-container .popup #btn2:checked ~ .icons label:nth-child(2),
+            .popup-container .popup #btn3:checked ~ .icons label:nth-child(3),
+            .popup-container .popup #btn4:checked ~ .icons label:nth-child(4),
+            .popup-container .popup #btn5:checked ~ .icons label:nth-child(5),
+            .popup-container .popup .icons label:hover {
+                opacity: 1;
+                font-size: 60px;
+            }
+
+        .popup-container .popup #close {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            border-radius: 50%;
+            border: 4px solid #ff6933;
+            height: 40px;
+            width: 40px;
+            line-height: 35px;
+            cursor: pointer;
+            background: #333;
+            color: #fff;
+            font-size: 20px;
+        }
+
+            .popup-container .popup #close:hover {
+                transform: rotate(90deg);
+            }
